@@ -1,18 +1,12 @@
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.io.File; 
+import java.io.FileNotFoundException;  
+import java.util.Scanner; 
 import java.util.*;
 public class ReadFile {
- 
-  public static void main(String[] args) {
-    
-    List <String> data = GetSymptoms();
-    Iterator i = data.iterator();
-    while(i.hasNext())
-      System.out.println(i.next());
-  }
 
-
+	/**
+	*Function that read line by line  the data from the symptoms.txt and then stock them in a List; which is returned  by the funtion
+	**/
   public static  List<String>  GetSymptoms() 
   {
     
@@ -27,7 +21,6 @@ public class ReadFile {
       {
         String data = myReader.nextLine();
         listSymptoms.add(data);
-        //System.out.println(data);
       }
       myReader.close();
 

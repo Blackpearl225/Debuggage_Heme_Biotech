@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+*Function which use the List return by the function GetSymptoms() from the ReadFile class, sorted them and count their occurences 
+**/
+
+
 public class CountAndSortSymptoms{
 
 	public  static  List<String> CountAndSort()

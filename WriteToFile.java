@@ -1,7 +1,10 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
-
+/**
+*Function that write in a file "result.out" line par line all the data stock in the List 
+return by the function CountAndSort() from the class CountAndSortSymptoms
+**/
 public class WriteToFile{ 
 
   public static void main(String[] args) 
