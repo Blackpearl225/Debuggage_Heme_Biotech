@@ -11,8 +11,8 @@ public class CountAndSortSymptoms{
 	{ 		
 
 	 	List <String> listSymptoms = ReadFile.GetSymptoms();
-    	HashSet<String> symptomsWithoutDuplicate = new HashSet<String>(listSymptoms);
-    	List<String> symptomsSortedAndcount = new ArrayList<String>();
+    		HashSet<String> symptomsWithoutDuplicate = new HashSet<String>(listSymptoms);
+    		List<String> symptomsSortedAndcount = new ArrayList<String>();
 		for (String s : symptomsWithoutDuplicate)
 		{
 			symptomsSortedAndcount.add(s+ "="+ Collections.frequency(listSymptoms, s));
